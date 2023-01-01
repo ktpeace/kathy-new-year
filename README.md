@@ -8,7 +8,7 @@
 
 [🎇 Kathy New Year](https://ktpeace.github.io/kathy-new-year/)
 
-## What will happen on New Year's...?
+## What will happen on New Year's?
 
 Only time will tell...
 
