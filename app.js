@@ -1,6 +1,12 @@
+const timer = document.querySelector(".timer");
+
 let localTime;
 let pacificDate;
 let pacificTime;
+
+// to avoid a second of blank space
+getNow();
+countdown();
 
 function getNow() {
   localTime = new Date();
@@ -12,10 +18,6 @@ function getNow() {
   }); // '12:21:22 PM'
 }
 
-getNow();
-const timer = document.querySelector(".timer");
-countdown(); // to avoid a second of blank space
-
 function calculateTime() {
   getNow();
   const nums = pacificTime.split(/:| /); // ['12', '21', '22', 'PM']
@@ -25,11 +27,6 @@ function calculateTime() {
   if (mins.toString().length === 1) mins = `0${mins}`;
   if (secs.toString().length === 1) secs = `0${secs}`;
   return `${hours}:${mins}:${secs}`;
-}
-
-function restOfTheYear() {
-  getNow();
-  timer.innerHTML = pacificDate;
 }
 
 function countdown() {
@@ -44,10 +41,15 @@ function celebrate() {
     '<img src="sheep.png" alt="rabbit riding sheep while yelling onward" class="sheep">';
 }
 
+function restOfTheYear() {
+  getNow();
+  timer.innerHTML = pacificDate;
+}
+
 if (pacificDate[0] === "1") {
   celebrate();
 } else if (pacificDate.slice(0,5) = "12/31") {
-setInterval(countdown, 1000);
+  setInterval(countdown, 1000);
 } else {
   setInterval(restOfTheYear, 1000)
 }
