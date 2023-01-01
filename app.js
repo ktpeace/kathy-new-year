@@ -12,7 +12,7 @@ function calculateTime() {
   let hours = 12 - nums[0];
   let mins = 60 - nums[1];
   let secs = 60 - nums[2];
-  if (hours === 0 && mins === 0 && secs === 0) {
+  if (nums[3] === "AM") {
     const h1 = document.querySelector("h1");
     h1.innerText = "🎆🌟HAPPY 2023, KATHY!🌟🎆";
     const belowH1 = document.querySelector(".below-h1");
