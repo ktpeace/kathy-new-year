@@ -1,4 +1,4 @@
-# KATHY NEW YEAR
+# 🎆 KATHY NEW YEAR
 
 ## A simple countdown timer for Kathy
 
