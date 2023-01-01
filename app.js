@@ -1,6 +1,3 @@
-let midnight = new Date("Jan 1, 2023 00:00:00").toLocaleTimeString("en-US", {
-  timeZone: "America/Los_Angeles",
-});
 let now = new Date().toLocaleTimeString("en-US", {
   timeZone: "America/Los_Angeles",
 });
