@@ -9,7 +9,7 @@ function calculateTime() {
     timeZone: "America/Los_Angeles",
   });
   const nums = now.split(/:| /); // ['9', '53', '42', 'PM']
-  let hours = 12 - nums[0];
+  let hours = 11 - nums[0];
   let mins = 60 - nums[1];
   let secs = 60 - nums[2];
   if (nums[3] === "AM") {
